@@ -1,0 +1,183 @@
+    body {
+      background: #a0d8f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .mario {
+      position: relative;
+      width: 120px;
+      height: 200px;
+    }
+
+    /* Hat */
+    .hat {
+      position: absolute;
+      width: 100px;
+      height: 40px;
+      background: red;
+      border-radius: 50% 50% 0 0;
+      top: 0;
+      left: 10px;
+      z-index: 5;
+    }
+
+    .hat::after {
+      content: 'M';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      color: red;
+      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 10px;
+      left: 40px;
+    }
+
+    /* Face */
+    .face {
+      position: absolute;
+      top: 30px;
+      left: 10px;
+      width: 100px;
+      height: 100px;
+      background: #fcd7b6;
+      border-radius: 50%;
+      z-index: 4;
+    }
+
+    /* Hair (sides) */
+    .hair {
+      position: absolute;
+      width: 20px;
+      height: 40px;
+      background: brown;
+      top: 50px;
+      border-radius: 10px;
+      z-index: 3;
+    }
+
+    .hair.left {
+      left: 0;
+    }
+
+    .hair.right {
+      right: 0;
+    }
+
+    /* Eyes */
+    .eye {
+      position: absolute;
+      width: 15px;
+      height: 25px;
+      background: white;
+      border-radius: 50%;
+      top: 60px;
+      z-index: 6;
+    }
+
+    .eye::after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 14px;
+      background: blue;
+      border-radius: 50%;
+      top: 5px;
+      left: 3.5px;
+    }
+
+    .eye.left {
+      left: 30px;
+    }
+
+    .eye.right {
+      right: 30px;
+    }
+
+    /* Mustache */
+    .mustache {
+      position: absolute;
+      width: 60px;
+      height: 10px;
+      background: brown;
+      border-radius: 0 0 10px 10px;
+      top: 90px;
+      left: 30px;
+      z-index: 7;
+    }
+
+    /* Body */
+    .body {
+      position: absolute;
+      width: 80px;
+      height: 70px;
+      background: blue;
+      top: 120px;
+      left: 20px;
+      border-radius: 10px;
+    }
+
+    /* Arms */
+    .arm {
+      position: absolute;
+      width: 20px;
+      height: 60px;
+      background: red;
+      top: 120px;
+      border-radius: 10px;
+    }
+
+    .arm.left {
+      left: 0;
+    }
+
+    .arm.right {
+      right: 0;
+    }
+
+    /* Legs */
+    .leg {
+      position: absolute;
+      width: 30px;
+      height: 40px;
+      background: brown;
+      top: 190px;
+      border-radius: 5px;
+    }
+
+    .leg.left {
+      left: 20px;
+    }
+
+    .leg.right {
+      right: 20px;
+    }
+
+    /* Buttons */
+    .button {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: yellow;
+      border-radius: 50%;
+      top: 130px;
+      z-index: 8;
+    }
+
+    .button.left {
+      left: 35px;
+    }
+
+    .button.right {
+      right: 35px;
+    }
